@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Karany</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="back__video">
+        <video  class="video__loop" autoplay loop muted src="video-loop.mp4" type="video/mp4"></video>
+    </section>
+<div class="container">
+    <header class="header " >
+        
+        <label class="burger__menu"  for="menu">
+            <div class="burger__menu-item"></div>
+            <div class="burger__menu-item"></div>
+            <div class="burger__menu-item"></div>
+        </label>
+        <input id="menu"  class="burger__checkbox"  type="checkbox">
+    
+        <nav class="navigation">
+        <li class="navigation__list">
+            <a href="#bio" class="navigation__list--item nav__bio">Bio</a>
+            <a href="#skills" class="navigation__list--item  nav__skills">Skills</a>
+            <a href="#media" class="navigation__list--item nav__media">Media</a>
+            <a href="#projects" class="navigation__list--item nav__projects">Projects</a>
+            <a href="#clients" class="navigation__list--item nav__clients">My Clients</a>
+            <a href="#contact" class="navigation__list--item nav__contact" >Contact</a>
+        </li>
+    </nav>
+    
+    <div class="toggle">
+        <h3 class="toggle__content">Switch Theme</h3>
+        <input type="checkbox" id="switch" name="switch" class="toggle__checkbox">
+        <label for="switch" class="toggle__label"></label>
+    </div>
+    </header>
+    <section id="bio"  class="bio__section template__section">
+        <div class="bio__content">
+        <h1 class="bio__title">Hi There, I’M A Persistent <br>Front-End Developer</h1>
+        <p class="bio__description">My name is <span class="bio__omar">Omar Karany</span>,
+                front-end develober, python progammer and medical laboratory 
+            scientist who has experience in medical analysis as Chemist,  
+            medical system Programmer and front-end developing. you can visit my accounts 
+            <a href="https://www.facebook.com/profile.php?id=100012262323623" class="bio__description--face" class="bio__links" target="_blank">Facebook, </a>
+            <a href="https://github.com/omar-karany" class="bio__description--git" class="bio__links"  target="_blank">Github, </a>
+            <a href="https://www.linkedin.com/in/omar-karany-7678782a2/" class="bio__description--linked" class="bio__links"  target="_blank">Linkedin</a> and
+            <a href="https://www.youtube.com/channel/UCe3lo4r2NILljVKGEOtVpTw" class="bio__description--youtube" class="bio__links"  target="_blank">Youtube</a>.
+        </p>
+        <div class="bio__buttons">
+            <a class="button__say__hi" href="#contact">Say Hi</a>
+            <a class="button__download" href="/images/omar cv 2024.pdf">Download CV <span class="bio__arrow">⭣</span></a>
+        </div>
+        </div>
+        <div class="bio__pic">
+            <img src="images/omar.png" alt="omar mahmoud image" class="omar__image">
+        </div>
+
+    </section>
+
+
+    <!--challenge1-->
+    <section id="skills"  class="skills section--with--bg">
+        <h2 class="skills__header h2-header">Skills</h2>
+        <li class="skills__list">
+            <ul class="skills__list_items">HTML<br> <span class="skills__list--years">Junior</span></ul>
+            <ul class="skills__list_items">CSS<br><span class="skills__list--years">Junior</span></ul>
+            <ul class="skills__list_items">Javascript<br><span class="skills__list--years">Junior</span></ul>
+            <ul class="skills__list_items">React<br><span class="skills__list--years">Junior</span></ul>
+            <ul class="skills__list_items">Python<br><span class="skills__list--years">Junior</span></ul>  
+        </li>
+    </section>
+
+    <section class="media" id="media">
+        <video  class="elzero__video" type="video/mp4" src="elzero.mp4" controls poster="images/video cover.jpg" ></video>
+    </section>
+
+
+    <section id="projects"  class="project__component template__section">
+        <h2 class="project__header h2-header">MY FEATURED<br/> PROJECTS</h2>
+        <div class="project1__pic">
+            <img src="images/expense tracker project.png" alt="expense tracker project image" class="project__pic">
+        </div>
+        <div class="project__content">
+            <h3 class="project__name h3-heading">Expense Tracker</h3>
+            <p class="project__description">
+                I have designed an Expense Tracker app using Tkinter, enabling 
+                users to log and categorize expenses seamlessly.
+                Proficient in data storage and currency conversion,
+                this project reflects my commitment to user-friendly 
+                solutions and efficient budget management. With a focus 
+                on detail and impactful development, I bring a passion 
+                for crafting applications that enhance user experiences 
+                and deliver valuable insights.
+            </p>
+        </div>
+        
+        <div class="project2__content project__content" >
+            <h3 class="project2__name h3-heading">personal profile</h3>
+            <p class="project2__description project__description">
+                I am a versatile and passionate developer with expertise in Python and web 
+                technologies. My website CV showcases my proficiency in creating intuitive 
+                applications and highlights my commitment to user-friendly solutions.
+            </p>
+        
+        </div>
+        <div class="project2__pic">
+            <img src="images/my profile projct.png" alt="my profile projct" class="my__profile__img project__pic">
+        </div>
+      </section>
+
+
+    <section id="clients"  class="clients__opinions section--with--bg">
+        <h2 class="h2-header">what my <br> clients says</h2>
+        <div class="opinions">
+            <p class="opinion">Exceptional developer! Implemented a robust solution
+                 that exceeded expectations. Timely, communicative, and brought innovative
+                  ideas to the table. Highly recommend!</p>
+            <p class="opinion">Outstanding work! Demonstrated a deep understanding 
+                of project requirements. Consistently delivered high-quality code
+                 with attention to detail. A reliable and skilled professional.</p>
+            <p class="opinion">Impressed by the level of expertise! Successfully 
+                tackled complex challenges, showing versatility and efficiency. Great 
+                collaboration and delivered exceptional results on time. A top-notch 
+                developer.</p>
+        </div>
+    </section>
+
+    <section  id="contact" class="contact__me template__section">
+        <div class="contact__me-social">
+            <p class="contact__description">Connect with me for questions,
+                 project collaborations, or just a friendly chat! Reach out 
+                 via email or social media—I'm eager to collaborate and bring 
+                 your ideas to life.</p>
+            <a href="mailto:omarkarany@gmail.com" class="email__address">
+                omarkarany@gmail.com</a>
+            <div class="social_contacts">
+                <a href="https://www.facebook.com/profile.php?id=100012262323623" class="contact" target="_blank">
+                    <img src="images/brand/facebook.svg" alt="facebook icon" class="face__img" >
+                </a>
+                <a href="https://github.com/omar-karany" class="contact" target="_blank">
+                    <img src="images/brand/github.svg" alt="github icon" class="github__img" >
+                </a>
+                <a href="https://www.linkedin.com/in/omar-karany-7678782a2/" class="contact" target="_blank">
+                    <img src="images/brand/LinkedIn.svg" alt="linkedin icon" class="linkedin__img"></a>
+                <a href="https://www.youtube.com/channel/UCe3lo4r2NILljVKGEOtVpTw" class="contact" target="_blank">
+                    <img src="images/brand/youtube.svg" alt="youtube icon" class="youtube__img"></a>
+            </div>
+        </div>
+        <div class="message__me">
+            <h2 class="h2-header">LET’S WORK <br>TOGETHER!</h2>
+            <form action="result.html" class="message__me-inputs">
+                <input class="user__input" type="text" name="user-name" placeholder="Full name" required>
+                <input class="user__input" type="tel" name="user-phone" placeholder="Phone No." required>
+                <textarea class="user__message user__input" name="user-message" id="message" rows="1" placeholder="your message" required></textarea>
+                <input class="message__me-button" type="submit" value="Send message" />
+            </form>
+        
+        </div>
+    </section>
+
+    <footer class="page__footer">© 2024 by Omar Karany</footer>
+
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+@media (max-width: 1000px) {
+    html {
+      font-size : 6px;
+  }
+  }
+  
+  /*for i-pad width*/
+  @media (max-width: 800px) {
+    .container {
+      row-gap: 10rem;
+    }
+  
+    .template__section {
+      grid-template-columns: 1fr;
+      row-gap: 7rem;
+    }
+  
+    .bio__pic{
+      order: -1;
+      justify-self: center;
+    }
+  
+    .skills__list{
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10rem;
+    }
+  
+    .project1__pic {
+      justify-self: center;
+    }
+    .project2__pic {
+      justify-self: center;
+    }
+  
+    .opinion {
+      font-size: 3rem;
+    }
+  
+    .message__me {
+      order: 1;
+    }
+    
+    /*order projects components*/
+    .project__header {
+      order: 2;
+    }
+    .project1__pic {
+      order: 3;
+    }
+    .project__content {
+      order: 4;
+    }
+    .project2__pic {
+      order: 5;
+    }
+    .project2__content {
+      order: 6;
+    }
+  }
+  
+  /*for mobile width*/
+  @media (max-width : 500px) {
+    .bio__pic, .omar__image {
+      width: 90%;
+  
+    }
+  
+    .header::before {
+      width: 100vw;
+      z-index: 0;
+  
+    }
+  
+  
+    .navigation {
+      position:absolute;
+      background-color: var(--color-background);
+      width: 100vw;
+      top: 0;
+      z-index: -1;
+      border-bottom: 0.1rem solid var(--color-text);
+      padding: 3rem 0 ;
+      
+      
+    }
+    .navigation__list {
+      justify-content: center;
+    }
+  
+    .burger__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: var(--transition-timing);
+      z-index: 1;
+      padding-inline-start: 4rem;
+    }
+  
+    .burger__menu-item {
+      background-color: var(--color-text);
+      width: 4.375rem;
+      height: 0.3rem;
+      
+    }
+  
+    .header:has(.burger__checkbox:checked) .burger__menu-item:nth-child(1) {
+      transform: translateY(6.5px) rotate(40deg);
+    }
+    .header:has(.burger__checkbox:checked) .burger__menu-item:nth-child(2) {
+      opacity: 0;
+      visibility:hidden;
+    }
+    .header:has(.burger__checkbox:checked) .burger__menu-item:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-40deg);
+    }
+  
+    .toggle {
+      z-index: 1;
+    }
+  
+    .burger__checkbox:checked + .navigation {
+      top : 100%
+    }
+  
+  
+  
+  
+  
+  }

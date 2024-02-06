@@ -1,0 +1,95 @@
+.container:has(#bio:target) .nav__bio,
+.container:has(#skills:target) .nav__skills,
+.container:has(#media:target) .nav__media,
+.container:has(#projects:target) .nav__projects,
+.container:has(#clients:target) .nav__clients,
+.container:has(#contact:target) .nav__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+
+
+.header{
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  padding: 3rem 0 ;
+  display: flex;
+  justify-content: center;
+  z-index: +1;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  border-bottom: var(--color-input-border) 0.1rem solid;
+  top: 0;
+  z-index: -1;
+  background-color: var(--color-background);
+
+}
+
+
+
+.navigation__list{
+  display: flex;
+  gap: 2rem;
+  
+}
+
+
+.navigation__list--item {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.burger__checkbox {
+  display: none;
+}
+
+/*toggle*/
+
+.toggle{
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  
+}
+
+.toggle__checkbox{
+  display: none;
+}
+.toggle__label{
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  width:4.5rem;
+  height: 2.2rem;
+  padding: 0.3rem 0.4rem;
+  cursor: pointer;
+  
+}
+
+.toggle__label::after{
+  display: block;
+  background-color: var(--color-white);
+  content: "";
+  width:1.6rem;
+  height: 1.6rem;
+  border: 50%;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.toggle__checkbox:checked + .toggle__label{
+  background-color: var(--color-white);
+
+}
+
+.toggle__checkbox:checked + .toggle__label::after{
+  background-color: var(--color-box-mg);
+  transform: translateX(2.1rem);
+}

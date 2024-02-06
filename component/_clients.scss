@@ -1,0 +1,12 @@
+.opinions {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory  ;
+    
+  }
+  .opinion {
+    flex-shrink: 0;
+    flex-basis: 100%;
+    font-size: var(--font-size-38);
+    scroll-snap-align: start;
+  }

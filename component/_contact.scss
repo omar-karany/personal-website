@@ -1,0 +1,62 @@
+.contact__me {
+    column-gap: 15rem;
+  }
+  .contact__me-social {
+    align-self: center;
+  }
+  
+  .contact__description {
+    line-height: 3.5rem;
+    font-size: var(--font-size-22);
+    
+  }
+  
+  .email__address {
+    font-weight: var(--font-weight-bold);
+    margin: 3rem 0;
+  
+  }
+  
+  .contact {
+    padding-inline-end:0.8rem ;
+    transition: var(--transition-timing);
+  }
+  
+  .contact:hover {
+    transform: scale(1.3);
+  }
+  
+  .message__me-inputs {
+    display:grid ;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .user__input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 0.1rem solid var(--color-input-border);
+  
+  }
+  
+  .user__message {
+    grid-column: 1/-1;
+    margin: 3rem 0;
+  }
+  
+  .message__me-button {
+    background-color: var(--color-box-mg);
+    color: var(--color-link-text);
+    padding: 1.7rem 1.8rem;
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-bold);
+  
+  }
+  
+  form:invalid::after {
+    content: "*";
+    color: var(--color-red);
+    font-size: var(--font-size-38);
+  }

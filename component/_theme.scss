@@ -1,0 +1,10 @@
+html :has(.toggle__checkbox:checked) {
+    --color-background: var(--color-black);
+      --color-text: var(--color-white);
+      --color-text-hover:var(--color-dark-blue);
+      --color-box-mg: var(--color-green);
+      --color-link-bg: var(--color-white);
+      --color-link-text: var(--color-black);
+      --color-input-border: var(--color-white);
+  
+  }

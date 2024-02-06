@@ -1,0 +1,104 @@
+.bio__title{
+    font-size: var(--font-size-65);
+    font-weight: var(--font-weight-bold);
+    line-height: 7.5rem;
+    margin-block-end: 2rem;
+  }
+  .bio__description{
+    font-size: var(--font-size-18);
+    line-height: 2.8rem;
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-family-poppins);
+    margin-block-end: 10rem;
+  }
+  .bio__omar{
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .bio__description--face:link,
+  
+  .bio__description--face:visited{
+    color: var(--color-blue);
+  }
+  
+  .bio__description--git:link,
+  .bio__description--git:visited{
+    color: var(--color-green);
+    
+  }
+  .bio__description--linked:link,
+  .bio__description--linked:visited {
+    color: var(--color-dark-blue);
+  }
+  
+  .bio__description--youtube:link,
+  .bio__description--youtube:visited {
+    color: var(--color-red);
+  }
+  
+  
+  /*bio__buttons*/
+  .bio__buttons{
+    display: flex;
+    gap: 4rem;
+    
+    
+    
+  }
+  .button__say__hi,
+  .button__download{
+    text-decoration: none;
+    font-size:2.4rem ;
+    text-align: center;
+    width: 18rem;
+    height: 4rem;
+    padding-block-start: 0.5rem;
+  }
+  .button__say__hi{
+    background-color: var(--color-box-mg);
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  @keyframes jump {
+    0%{transform: translateY(0.5rem);};
+    35%{transform: translateY(-0.5rem);};
+    70%{transform: translateY(0);};
+    100%{transform: translateY(0);};
+  }
+  
+  
+  .bio__arrow{
+    display: inline-block;
+    animation: alternate jump infinite 0.5s ease-in-out;
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  
+  /*picture*/
+  .omar__image{
+    width: 42rem;
+    height: 42.7rem;
+    padding-inline-start: 0.2rem;
+    border-radius: 2rem;
+  }
+  .bio__pic{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-self: end;
+    width: 42rem;
+    height: 42.7rem;
+  }
+  
+  .bio__pic::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40rem;
+    background-color: var(--color-box-mg);
+    opacity: 0.8;
+    border-radius: 2rem;
+    z-index: -1;
+  }

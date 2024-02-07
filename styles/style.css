@@ -375,6 +375,10 @@ header::before {
   height: 42.7rem;
 }
 
+.project1__link {
+  margin-block-start: 1rem;
+}
+
 .project__description {
   line-height: 2.5rem;
 }
